@@ -1,0 +1,6 @@
+body { background: #f8f9fa; }
+.hero { background: linear-gradient(135deg, #e7f1ff, #ffffff); }
+.hero .lead { max-width: 42rem; }
+.form-card { max-width: 32rem; }
+.card-action { color: inherit; transition: transform .15s ease, box-shadow .15s ease; }
+.card-action:hover { transform: translateY(-3px); box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .12); }

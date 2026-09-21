@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Acessar | Meu Projeto{% endblock %}
+{% block content %}
+<div class="form-card card shadow-sm mx-auto">
+  <div class="card-body p-4">
+    <h1 class="h3 mb-3">Acessar sistema</h1>
+    <form method="post">
+      <div class="mb-3">
+        <label class="form-label" for="email">E-mail</label>
+        <input class="form-control" id="email" name="email" type="email" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="password">Senha</label>
+        <input class="form-control" id="password" name="password" type="password" required>
+      </div>
+      <button class="btn btn-primary w-100" type="submit">Entrar</button>
+    </form>
+    <p class="text-center mb-0 mt-3">Ainda não possui conta? <a href="{{ url_for('cadastro') }}">Cadastre-se</a>.</p>
+  </div>
+</div>
+{% endblock %}
